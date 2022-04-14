@@ -39,7 +39,7 @@ const Home = () => {
     }
 
     const handleChangeChecked = id => {
-        debugger
+    
         const cuisinesStateList = cusines;
         const changeCheckedCuisines = cuisinesStateList.map(
             (item) => item.id === id ? { ...item, checked: !item.checked } : item
@@ -51,7 +51,7 @@ const Home = () => {
     const handleChangePrice = (event, value) => setSelectedPrice(value);
 
     const applyFilters = () => {
-        debugger
+        
        let  updatedList = dataList;
 
         //Rating Filter
@@ -93,7 +93,7 @@ const Home = () => {
     }
 
     useEffect(() => {
-        debugger
+        
         applyFilters();
     },[selectedRating,selectedCategory,cusines,selectedPrice])
 
